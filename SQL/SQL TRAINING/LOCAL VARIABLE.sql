@@ -1,0 +1,6 @@
+		DECLARE @varCUST_ID	VARCHAR(30)
+		DECLARE @intCOUNT		Int
+		SELECT @varCUST_ID 	= 'HCL'
+		SELECT @intCOUNT 		=5
+		PRINT @varCUST_ID
+		PRINT @intCOUNT 

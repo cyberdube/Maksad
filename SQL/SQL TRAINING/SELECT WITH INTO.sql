@@ -1,0 +1,12 @@
+USE NORTHWIND
+DROP TABLE HCLTABLE		--remove the table
+SELECT  
+	COUNT(*) as NO_OF_ROWS ,  
+	NEWID() as ID_NO,
+	SUM(UnitPrice) AS [TOTAL SUM]	
+INTO 
+	HCLTABLE
+FROM 
+	[Order Details]
+
+SELECT * FROM HCLTABLE
